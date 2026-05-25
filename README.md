@@ -1,62 +1,55 @@
 # NFG A-Matic Player
 
-NFG A-Matic Player is a lightweight runtime application for installing and running NFG A-Matic automation packages.
+NFG A-Matic Player is a Windows runtime for installing and running screen-aware automation packages.
 
-Current beta package available through the official catalog:
+## Links
 
-- Foxhole Helper
+- Website: https://nfg-system.online/
+- Download Player: https://nfg-system.online/#download
+- Package catalog: https://nfg-system.online/packages/
+- Support: https://nfg-system.online/support/
 
 ## Download
 
-Open the latest release and download:
+Download the latest beta Player from the official website:
 
-`NFG_A-Matic_Player_0.1.1-beta.1_win-x64.zip`
+https://nfg-system.online/#download
 
-Releases:
+Or from GitHub Releases:
+
 https://github.com/Aneonfas/nfg-amatic-player/releases
 
-## First start
+Do not download GitHub `Source code` archives unless you are a developer.
 
-1. Download the zip archive.
-2. Extract it to any folder.
-3. Run `NFG A-Matic Player.exe`.
-4. Open **Catalog**.
-5. Install **Foxhole Helper**.
-6. Launch Foxhole in windowed or borderless windowed mode.
-7. Enable the package in Player.
+## Current beta
 
-## Foxhole Helper
+- Player: `0.1.2-beta.1`
+- Runtime/Core: `0.1.0`
+- Platform: Windows x64
 
-Foxhole Helper adds mouse hold support for supported Foxhole actions.
+## Packages
 
-Supported package version is installed from the official NFG A-Matic package catalog.
+Available packages are listed here:
 
-## Beta status
+https://nfg-system.online/packages/
 
-This is a beta release.
+Current public package:
+
+- Foxhole Helper `0.4.5`
+
+## Support
+
+For beta support, diagnostics, and issue reporting:
+
+https://nfg-system.online/support/
+
+## Notes
+
+NFG A-Matic Player is currently in beta.
 
 Known limitations:
 
-- No installer yet.
-- No auto-updater yet.
+- Distributed as a zip archive, no installer yet.
+- No Player auto-updater yet.
 - Windows may show a warning because the app is not code-signed yet.
-- The app is currently distributed as a zip archive.
-
-## Diagnostics
-
-In Player, open **About** to view:
-
-- Player version
-- Runtime/Core version
-- .NET runtime
-- OS version
-- package library path
-- log path
-
-Use **Copy diagnostics** when reporting issues.
-
-## Official package catalog
-
-The Player uses the official package catalog:
-
-https://raw.githubusercontent.com/Aneonfas/nfg-amatic-packages/main/catalog.json
+- Studio is not publicly distributed yet.
