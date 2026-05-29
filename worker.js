@@ -104,10 +104,13 @@ function resolveStaticPath(path) {
 
 async function serveStatic(staticPath, method) {
   const upstreamUrl = `${STATIC_BASE}/${staticPath}?v=${STATIC_REV}`;
-  const upstreamResponse = await fetch(upstreamUrl, {
+  const cacheTtl = cacheTtlFor(staticPath);
+  const fetchOptions = {
     headers: { "user-agent": "nfg-amatic-site-worker" },
-    cf: { cacheEverything: true, cacheTtl: cacheTtlFor(staticPath) },
-  });
+    cache: cacheTtl <= 60 ? "no-store" : undefined,
+    cf: cacheTtl > 60 ? { cacheEverything: true, cacheTtl } : undefined,
+  };
+  const upstreamResponse = await fetch(upstreamUrl, fetchOptions);
 
   if (!upstreamResponse.ok) {
     return new Response("Not found", {
@@ -118,7 +121,7 @@ async function serveStatic(staticPath, method) {
 
   return new Response(method === "HEAD" ? null : upstreamResponse.body, {
     status: 200,
-    headers: responseHeaders(contentTypeFor(staticPath), cacheTtlFor(staticPath)),
+    headers: responseHeaders(contentTypeFor(staticPath), cacheTtl),
   });
 }
 
@@ -138,8 +141,8 @@ function responseHeaders(contentType, cacheTtl) {
 }
 
 function cacheTtlFor(path) {
-  if (path.endsWith(".html") || path === "robots.txt" || path === "sitemap.xml") return 300;
-  if (path.endsWith(".css") || path.endsWith(".js")) return 300;
+  if (path.endsWith(".html") || path === "robots.txt" || path === "sitemap.xml") return 0;
+  if (path.endsWith(".css") || path.endsWith(".js")) return 0;
   return 86400;
 }
 
