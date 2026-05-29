@@ -6,7 +6,7 @@ const ZIP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/download
 const REPO_URL = "https://github.com/Aneonfas/nfg-amatic-player";
 const PACKAGE_REPO_URL = "https://github.com/Aneonfas/nfg-amatic-packages";
 const STATIC_BASE = "https://raw.githubusercontent.com/Aneonfas/nfg-amatic-player/main";
-const STATIC_REV = "2026-05-29-mobile-nav-wrap";
+const STATIC_REV = "2026-05-29-site-content-v2";
 
 const STATIC_ROUTES = {
   "/": "index.html",
@@ -24,6 +24,7 @@ const STATIC_ROUTES = {
   "/assets/site-20260529.css": "assets/site.css",
   "/assets/site-20260529b.css": "assets/site.css",
   "/assets/site-20260529c.css": "assets/site.css",
+  "/assets/site-20260529d.css": "assets/site.css",
   "/assets/site.js": "assets/site.js",
   "/robots.txt": "robots.txt",
   "/sitemap.xml": "sitemap.xml",
