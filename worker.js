@@ -6,6 +6,7 @@ const ZIP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/download
 const REPO_URL = "https://github.com/Aneonfas/nfg-amatic-player";
 const PACKAGE_REPO_URL = "https://github.com/Aneonfas/nfg-amatic-packages";
 const STATIC_BASE = "https://raw.githubusercontent.com/Aneonfas/nfg-amatic-player/main";
+const STATIC_REV = "2026-05-29-mobile-nav";
 
 const STATIC_ROUTES = {
   "/": "index.html",
@@ -100,7 +101,7 @@ function resolveStaticPath(path) {
 }
 
 async function serveStatic(staticPath, method) {
-  const upstreamUrl = `${STATIC_BASE}/${staticPath}`;
+  const upstreamUrl = `${STATIC_BASE}/${staticPath}?v=${STATIC_REV}`;
   const upstreamResponse = await fetch(upstreamUrl, {
     headers: { "user-agent": "nfg-amatic-site-worker" },
     cf: { cacheEverything: true, cacheTtl: cacheTtlFor(staticPath) },
