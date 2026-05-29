@@ -59,7 +59,7 @@ Source:
 
 - `index.html`, `foxhole-clicker/`, `packages/`, `support/` - static site pages.
 - `assets/` - CSS, JavaScript, brand assets, and public screenshots.
-- `worker.js` - generated Worker wrapper that serves the static pages and redirects binary assets from GitHub raw.
+- `worker.js` - lightweight Cloudflare Worker router that serves site files from this repository and redirects downloads to GitHub Releases.
 - `wrangler.toml` - deployment metadata for the Worker name and compatibility date.
 
 ## Notes
