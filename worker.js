@@ -1,13 +1,13 @@
-const PLAYER_VERSION = "0.1.4-beta.1";
-const RUNTIME_VERSION = "0.1.11";
-const RELEASE_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/tag/player-0.1.4-beta.1";
-const SETUP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/download/player-0.1.4-beta.1/NFG_A-Matic_Player_Setup_0.1.4-beta.1_win-x64.exe";
-const ZIP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/download/player-0.1.4-beta.1/NFG_A-Matic_Player_0.1.4-beta.1_win-x64.zip";
+const PLAYER_VERSION = "0.1.5-beta.1";
+const RUNTIME_VERSION = "0.1.12";
+const RELEASE_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/tag/player-0.1.5-beta.1";
+const SETUP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/download/player-0.1.5-beta.1/NFG_A-Matic_Player_Setup_0.1.5-beta.1_win-x64.exe";
+const ZIP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/download/player-0.1.5-beta.1/NFG_A-Matic_Player_0.1.5-beta.1_win-x64.zip";
 const REPO_URL = "https://github.com/Aneonfas/nfg-amatic-player";
 const PACKAGE_REPO_URL = "https://github.com/Aneonfas/nfg-amatic-packages";
 const DISCORD_URL = "https://discord.gg/Hwr2DNyrJe";
 const STATIC_BASE = "https://raw.githubusercontent.com/Aneonfas/nfg-amatic-player/refs/heads/main";
-const STATIC_REV = "2026-05-29-anvil-helper-soon";
+const STATIC_REV = "2026-05-29-player-0.1.5-foxhole-0.5.0";
 
 const STATIC_ROUTES = {
   "/": "index.html",

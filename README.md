@@ -7,15 +7,15 @@ NFG A-Matic Player is a Windows runtime for installing and running screen-aware 
 - Website: https://nfg-system.online/
 - Recommended installer: https://nfg-system.online/download
 - Portable ZIP: https://nfg-system.online/download/portable
-- GitHub release: https://github.com/Aneonfas/nfg-amatic-player/releases/tag/player-0.1.4-beta.1
+- GitHub release: https://github.com/Aneonfas/nfg-amatic-player/releases/tag/player-0.1.5-beta.1
 - Package catalog: https://nfg-system.online/packages/
 - Support: https://nfg-system.online/support
 - Discord support: https://nfg-system.online/discord
 
 ## Current beta
 
-- Player: `0.1.4-beta.1`
-- Runtime/Core: `0.1.11`
+- Player: `0.1.5-beta.1`
+- Runtime/Core: `0.1.12`
 - Platform: Windows x64
 - Status: beta, unsigned
 
@@ -24,29 +24,29 @@ NFG A-Matic Player is a Windows runtime for installing and running screen-aware 
 Recommended installer:
 
 ```text
-NFG_A-Matic_Player_Setup_0.1.4-beta.1_win-x64.exe
+NFG_A-Matic_Player_Setup_0.1.5-beta.1_win-x64.exe
 ```
 
 Portable fallback archive:
 
 ```text
-NFG_A-Matic_Player_0.1.4-beta.1_win-x64.zip
+NFG_A-Matic_Player_0.1.5-beta.1_win-x64.zip
 ```
 
 Release assets are hosted on GitHub Releases:
 
-https://github.com/Aneonfas/nfg-amatic-player/releases/tag/player-0.1.4-beta.1
+https://github.com/Aneonfas/nfg-amatic-player/releases/tag/player-0.1.5-beta.1
 
 ## Verification
 
-- Installer SHA256: `1F73BAEFC8AC0E5B8A0C3B8002D7378A2AEE3ACB255D030E78CDE24F71321A4D`
-- Portable ZIP SHA256: `AD7331E06A339BE03A43E685612E5543A3E5A5F0C6146CECEC90C67560C15597`
+- Installer SHA256: `805FBAD32071C82E80D788410AAFE2FCB7EB96CCBDD01B6A3B14DB1EC229EE64`
+- Portable ZIP SHA256: `15FF8269068A4735EA3B95377337FF94EF242F393F67D13C57A05F3D829C43E4`
 
 ## Packages
 
 Current public package:
 
-- Foxhole Helper `0.4.5`
+- Foxhole Helper `0.5.0`
 
 Planned package:
 
