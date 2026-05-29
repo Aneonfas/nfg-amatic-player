@@ -57,8 +57,9 @@ The website is served by the Cloudflare Worker `polished-poetry-b345` on `nfg-sy
 
 Source:
 
-- `worker.js` - self-contained Worker site and redirect routes.
-- `assets/foxhole-helper/` - public screenshots referenced by the site through GitHub raw URLs.
+- `index.html`, `foxhole-clicker/`, `packages/`, `support/` - static site pages.
+- `assets/` - CSS, JavaScript, brand assets, and public screenshots.
+- `worker.js` - generated Worker wrapper that serves the static pages and redirects binary assets from GitHub raw.
 - `wrangler.toml` - deployment metadata for the Worker name and compatibility date.
 
 ## Notes
