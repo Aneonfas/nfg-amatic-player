@@ -5,8 +5,9 @@ const SETUP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/downlo
 const ZIP_URL = "https://github.com/Aneonfas/nfg-amatic-player/releases/download/player-0.1.4-beta.1/NFG_A-Matic_Player_0.1.4-beta.1_win-x64.zip";
 const REPO_URL = "https://github.com/Aneonfas/nfg-amatic-player";
 const PACKAGE_REPO_URL = "https://github.com/Aneonfas/nfg-amatic-packages";
+const DISCORD_URL = "https://discord.gg/Hwr2DNyrJe";
 const STATIC_BASE = "https://raw.githubusercontent.com/Aneonfas/nfg-amatic-player/main";
-const STATIC_REV = "2026-05-29-site-content-v2";
+const STATIC_REV = "2026-05-29-discord-support";
 
 const STATIC_ROUTES = {
   "/": "index.html",
@@ -66,6 +67,10 @@ async function handleRequest(request) {
 
   if (path === "/catalog") {
     return Response.redirect(`${PACKAGE_REPO_URL}/blob/main/catalog.json`, 302);
+  }
+
+  if (path === "/discord" || path === "/discord/") {
+    return Response.redirect(DISCORD_URL, 302);
   }
 
   if (path === "/health") {

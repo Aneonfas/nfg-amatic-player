@@ -10,6 +10,7 @@ NFG A-Matic Player is a Windows runtime for installing and running screen-aware 
 - GitHub release: https://github.com/Aneonfas/nfg-amatic-player/releases/tag/player-0.1.4-beta.1
 - Package catalog: https://nfg-system.online/packages/
 - Support: https://nfg-system.online/support
+- Discord support: https://nfg-system.online/discord
 
 ## Current beta
 
