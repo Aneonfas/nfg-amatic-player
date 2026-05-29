@@ -48,6 +48,10 @@ Current public package:
 
 - Foxhole Helper `0.4.5`
 
+Planned package:
+
+- Anvil Helper for Anvil Empires - soon, focused on forging and cooking assistance.
+
 The package catalog source lives in:
 
 https://github.com/Aneonfas/nfg-amatic-packages
