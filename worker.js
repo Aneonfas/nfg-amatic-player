@@ -103,13 +103,11 @@ function resolveStaticPath(path) {
 }
 
 async function serveStatic(staticPath, method) {
-  const upstreamUrl = `${STATIC_BASE}/${staticPath}?v=${STATIC_REV}`;
   const cacheTtl = cacheTtlFor(staticPath);
-  const fetchOptions = {
-    headers: { "user-agent": "nfg-amatic-site-worker" },
-    cache: cacheTtl <= 60 ? "no-store" : undefined,
-    cf: cacheTtl > 60 ? { cacheEverything: true, cacheTtl } : undefined,
-  };
+  const cacheBypass = cacheTtl <= 60 ? `&t=${Date.now()}` : "";
+  const upstreamUrl = `${STATIC_BASE}/${staticPath}?v=${STATIC_REV}${cacheBypass}`;
+  const fetchOptions = { headers: { "user-agent": "nfg-amatic-site-worker" } };
+  if (cacheTtl > 60) fetchOptions.cf = { cacheEverything: true, cacheTtl };
   const upstreamResponse = await fetch(upstreamUrl, fetchOptions);
 
   if (!upstreamResponse.ok) {
